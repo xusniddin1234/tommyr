@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 243, 243);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* O‘yin qutisi */
+#game-box {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Tugmani bosganda kichraytirish effekti */
+#game-box:active {
+    transform: scale(0.9);
+}
+
+/* Mobil qurilmalar uchun moslashuv */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #game-box {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #game-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
